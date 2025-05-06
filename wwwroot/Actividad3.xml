@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Contacts>
+	<Contact>
+		<Name>Juan Pérez</Name>
+		<Phone>+52 55 1234 5678</Phone>
+		<Address>Calle 123</Address>
+		<City>Ciudad de México</City>
+		<Country>México</Country>
+	</Contact>
+	<Contact>
+		<Name>María López</Name>
+		<Phone>+52 33 9876 5432</Phone>
+		<Address>Avenida Siempre Viva</Address>
+		<City>Guadalajara</City>
+		<Country>México</Country>
+	</Contact>
+</Contacts>
+
