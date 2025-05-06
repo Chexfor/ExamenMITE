@@ -1,10 +1,39 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Examen ";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4"> Bienvenido a las 3 actividades. </h1>
+
+    <h2>Calculadora de Área y Perímetro de un Triángulo</h2>
+
+    <form method="post">
+        <label>Lado A:</label>
+        <input type="number" asp-for="Triangulo.LadoA" required />
+
+        <label>Lado B:</label>
+        <input type="number" asp-for="Triangulo.LadoB" required />
+
+        <label>Lado C:</label>
+        <input type="number" asp-for="Triangulo.LadoC" required />
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(Model.Resultado))
+    {
+        <p>@Model.Resultado</p>
+    }
+    <hr />
+    <hr />
+    <a href="/Actividad2.html">
+        <button>Página de Información</button>
+    </a>
+    <hr />
+    <hr />
+    <a href="/Actividad3.xml" target="_blank">
+        <button>Ver XML</button>
+    </a>
 </div>
